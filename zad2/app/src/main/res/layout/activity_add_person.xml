@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPersonActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_begin="16dp"
+        android:orientation="vertical">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintGuide_end="16dp"
+        android:orientation="vertical">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter name..."
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        android:layout_margin="15dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/dateEditText"
+        app:layout_constraintTop_toBottomOf="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="DD.MM.YYYY."
+        android:layout_margin="15dp" />
+
+    <TextView
+        android:id="@+id/imageURLTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image URL"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/dateEditText"
+        android:layout_margin="15dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/imageURLEditText"
+        app:layout_constraintTop_toBottomOf="@+id/imageURLTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Paste your image URL..."
+        android:layout_margin="15dp" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/imageURLEditText"
+        android:layout_margin="15dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Enter description..."
+        android:layout_margin="15dp" />
+
+    <Button
+        android:id="@+id/addQuoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add quote"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toBottomOf="@id/descriptionEditText"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
