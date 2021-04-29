@@ -1,4 +1,4 @@
-package com.example.rma_lv3.zad1
+package com.example.rma_lv3
 
 import android.app.Application
 

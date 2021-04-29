@@ -1,15 +1,14 @@
-    package com.example.rma_lv3.zad1
+package com.example.rma_lv3
 
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.rma_lv3.R
 import com.example.rma_lv3.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private val PREFS_FILENAME = "AnimalCounter"
+    private val PREFS_FILENAME = "com.example.rma_lv3"
     private val COLOR_KEY = "color"
     private val COUNT_KEY = "count"
     private lateinit var mainBinding: ActivityMainBinding
